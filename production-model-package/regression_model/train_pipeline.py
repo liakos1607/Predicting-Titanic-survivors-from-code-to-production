@@ -26,7 +26,7 @@ def run_training() -> None:
     price_pipe.fit(X_train, y_train)
 
     # persist trained model
-    save_pipeline(pipeline_to_persist=price_pipe)
+    save_pipeline(pipeline_to_persist=titanic_pipe)
 
 
 if __name__ == "__main__":
