@@ -8,9 +8,7 @@ from setuptools import find_packages, setup
 # Package meta-data.
 NAME = 'tid-regression-model'
 DESCRIPTION = "Example regression model package from Train In Data."
-URL = "https://github.com/trainindata/testing-and-monitoring-ml-deployments"
-EMAIL = "christopher.samiullah@protonmail.com"
-AUTHOR = "ChristopherGS"
+
 REQUIRES_PYTHON = ">=3.6.0"
 
 
@@ -43,10 +41,9 @@ setup(
     description=DESCRIPTION,
     long_description=long_description,
     long_description_content_type="text/markdown",
-    author=AUTHOR,
-    author_email=EMAIL,
+    
     python_requires=REQUIRES_PYTHON,
-    url=URL,
+    
     packages=find_packages(exclude=("tests",)),
     package_data={"regression_model": ["VERSION"]},
     install_requires=list_reqs(),
